@@ -140,4 +140,27 @@ git init -b main
 git status  
 //将当前工作目录下所有被修改或者新创建的文件添加到 Git 的暂存区（也称为索引）。暂存区是介于工作目录和本地仓库之间的一个中间区域，它允许你选择性地将文件的修改分组，然后再一起提交到本地仓库。
 git add . 
+//添加单独文件
+git add lib/foundry-devops
+//强制添加文件
+git add -f lib/foundry-devops
+//提交代码
+git commit -m 'our first commit'
+```
+
+#github
+```
+//或者在命令行上创建一个新的存储库
+echo "#foundry-simple-f23" >> README.md 
+git init 
+git add README.md 
+git commit -m "首次提交" 
+git branch -M main 
+git remote add origin https://github.com/zhanglinfei5820/foundry-simple-f23.git
+ git push -u origin main
+
+//或者从命令行推送现有的存储库
+git remote add origin https://github.com/zhanglinfei5820/foundry-simple-f23.git
+git branch -M main 
+git push -u origin main
 ```
